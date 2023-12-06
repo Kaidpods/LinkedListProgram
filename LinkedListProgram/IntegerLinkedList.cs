@@ -24,9 +24,9 @@ namespace LinkedListProgram
 
 
         /// <summary>
-        /// Add something to the start of the Linked List
+        /// Add something to the Start of the Linked List
         /// </summary>
-        /// <param name="value">Data value to add</param>
+        /// <param name="value">Data Value to add</param>
         public void AddFirst(int value) 
         {
             count++;
@@ -48,7 +48,7 @@ namespace LinkedListProgram
         /// <summary>
         /// Adds something to the end of the Linked List
         /// </summary>
-        /// <param name="value">Data value to add</param>
+        /// <param name="value">Data Value to add</param>
         public void AddLast(int value)
         {
 
@@ -66,7 +66,7 @@ namespace LinkedListProgram
                 //Start
                 Node? nodeCurrent = start;
 
-                //Loop through all the nodes until Node.next == null
+                //Loop through all the nodes until Item.Next == null
                 while (nodeCurrent.next != null) 
                 {
                     nodeCurrent = nodeCurrent.next;
@@ -84,7 +84,7 @@ namespace LinkedListProgram
             ResetLinkedList();
         }
         /// <summary>
-        /// Display the contents of the linked list from start to end
+        /// Display the contents of the linked list from Start to end
         /// </summary>
         public void DisplayUI()
         {
@@ -93,13 +93,13 @@ namespace LinkedListProgram
             {
                 Console.WriteLine("Count: {0}", Count);
 
-                //output the value in the first node
+                //output the Value in the first node
                 Console.Write(start.value + ",");
 
-                //get the next node
+                //get the Next node
                 Node? nextNode = start.next;
 
-                //start and keeping looping until the next node points to null(end of the list)
+                //Start and keeping looping until the Next node points to null(end of the list)
                 while (nextNode != null)
                 {
                     Console.Write(nextNode.value + ",");

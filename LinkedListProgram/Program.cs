@@ -4,15 +4,29 @@
     {
         static void Main(string[] args)
         {
-            IntegerLinkedList linkList = new IntegerLinkedList();
+            MyQueue myQueue = new MyQueue();
+            IntegerLinkedList MyList = new IntegerLinkedList();
 
-            linkList.AddLast(4);
-            linkList.AddLast(6);
-            linkList.AddLast(10);
-            linkList.AddLast(3);
-
-
-            linkList.DisplayUI();
+            QueueTest(myQueue);
+            LinkedListTest(MyList);
+        }
+        public static void QueueTest(MyQueue Queue)
+        {
+            Queue.Join(4);
+            Queue.Join(11);
+            Queue.Join(20);
+            Queue.Join(8);
+            
+            Queue.DisplayUI();
+        }
+        public static void LinkedListTest(IntegerLinkedList List)
+        {
+            List.AddFirst(4);
+            List.AddLast(11);
+            List.AddFirst(20);
+            List.AddFirst(8);
+            
+            List.DisplayUI();
         }
     }
 }
